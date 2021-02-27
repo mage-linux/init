@@ -1,0 +1,8 @@
+#!/bin/sh
+
+umount -a -r
+
+case "$1" in
+    reboot) halt -r;;
+    shutdown) halt -p;;
+esac
